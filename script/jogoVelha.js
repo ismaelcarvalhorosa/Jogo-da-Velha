@@ -46,6 +46,12 @@ const tic_tac_toe = {
         console.log("Game Over");
     },
 
+    start:function(){
+        this.board.fill('');
+        this.draw();
+        this.gameover = false;
+    },
+
     check_sequece:function(simbols){
         for(i in this.vense_sequences){
             if(this.board[this.vense_sequences[i][0]]== simbols &&
